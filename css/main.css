@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.container, .navbar,.nav-list,.main-page,.coin,.main-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* navbar */
+.navbar{
+    width: 95%;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    background: rgba(141, 153, 174, 0.8);
+    margin: 2%;
+    border-radius: 15px;
+    position: sticky;
+    top: 2.5%;
+    left: 2.5%;
+    z-index: 2;
+    box-shadow: 0px 0px 7px 2px #8d99ae;
+}
+.left-nav img{
+    width: 80px;
+}
+.nav-list{
+    flex-direction: row;
+    list-style: none;
+}
+.nav-list-item{
+    padding: 10px;
+}
+.nav-list-item a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.slider{
+    width: 0px;
+    margin-top: 5px;
+    transition: width 0.5s ease;
+    height: 3px;
+    background: #2b2d42;
+}
+.nav-list-item:hover .slider{
+    width: 100%;
+}
+
+
+/* main page */
+.main-page{
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+}
+.main-left{
+    width: 40%;
+    height: 350px;
+    background: #ef233c;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 30px;
+    color: white;
+    justify-content: space-evenly;
+    max-width: 300px;
+}
+.coin{
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    font-size: 6rem;
+    margin: 3%;
+    color: black;
+}
+.main-right{
+    width: 60%;
+    height: 500px;
+    background: #2b2d42;
+    margin: 2%;
+    padding: 2%;
+    text-align: left;
+    color: white;
+    border-radius: 30px;
+    position: relative;
+}
+.main-right h1{
+    font-size: 60px;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 5px solid white;
+}
+.main-right p{
+    padding: 10px;
+}
+.main-right-bottom{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+}
+.main-bar,.main-bar1{
+    background: #ef233c;
+    height: 10px;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 20px;
+    opacity: 60%;
+}
+
+/* dashboard */
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+}
+.updash{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.updash h2{
+    font-size: 40px;
+}
+.updash select{
+    width: 50%;
+    padding:10px 20px;
+    margin: 3%;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #ef233c;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+.updash select:focus{
+    outline: none;
+    border-bottom: 3px solid #2b2d42;
+}
+.updash button{
+    padding: 10px 20px;
+    width: 20%;
+    background: #2b2d42;
+    border: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 2%;
+}
+.updash button:hover{
+    background: #8d99ae;
+    color: #2b2d42;
+}
+.updash button:focus{
+    outline: none;
+}
+.lowdash{
+    height: 60vh;
+    width: 95%;
+    background: #edf2f4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-dash{
+    width: 40%;
+    background: #8d99ae;
+    height: 90%;
+    margin: 2%;
+    border-radius: 20px;
+    
+}
+.right-dash{
+    overflow: scroll;
+    width: 52%;
+    background: #2b2d42;
+    height: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,0fr);
+    gap: 2%;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #edf2f4;
+    padding: 10px;
+    border-radius: 20px;
+}
+.hover{
+    background: #ef233c;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: none;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+}
+.anim{
+    transition: all 2s ease;
+    transition-duration: 2s;
+}
+
+/* about */
+.about,.right-abt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+}
+.left-abt{
+    width: 50%;
+}
+.right-abt img{
+    width: 100%;
+}
+.right-abt{
+    width: 50%;
+}

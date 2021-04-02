@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrFauna</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left-nav">
+                <img src="./images/dog.png" alt="">
+            </div>
+            <div class="right-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="#">Home</a>
+                        <div class="slider"></div>
+                    </li>
+                    <li class="nav-list-item"><a href="#">Dashboard</a>
+                        <div class="slider"></div>
+                    </li>
+                    <li class="nav-list-item"><a href="#">About</a>
+                        <div class="slider"></div>
+                    </li>
+                    <li class="nav-list-item"><a href="#">Contact Us</a>
+                        <div class="slider"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-page">
+            <div class="main-left">
+                <h1>Badges Earned</h1>
+                <div class="coin">
+                    0
+                </div>
+                <div class="main-left-bottom">
+                    <img src="./images/Untitled-1.png" alt="" width="25%">
+                </div>
+            </div>
+            <div class="main-right">
+                <h1>DrFauna</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam, repellendus officiis quae
+                    accusantium debitis dolor minima aliquid delectus odit maxime aut, reprehenderit voluptatem
+                    perferendis porro ullam nam ipsa unde, minus fugit quis. Iusto dicta omnis magnam molestias eligendi
+                    doloribus architecto! Incidunt laborum tempore sequi vel exercitationem vero, sunt repudiandae?
+                    Quis, hic. Harum odio aperiam eaque sit perferendis quod ex reprehenderit, repudiandae eveniet sint
+                    quibusdam vero in amet voluptate, magni veniam! Pariatur iusto quaerat nam eius voluptate!
+                    Reprehenderit, ducimus nisi.</p>
+                <div class="main-right-bottom">
+                    <img src="./images/Untitled-2.png" alt="" style="height: 100px;">
+                </div>
+            </div>
+        </div>
+        <div class="main-bar"></div>
+        <div class="dashboard">
+            <div class="updash">
+                <h2>Select your City</h2>
+                <select name="city" id="city">
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                </select>
+                <button id="selectBtn">Select</button>
+            </div>
+            <div class="lowdash">
+                <div class="left-dash">
+                    map
+                </div>
+                <div class="right-dash">
+                    <div class="card">
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sapiente.</h4>
+                        <div class="hover">
+                            <p>6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-bar1"></div>
+        <h1>About</h1>
+        <div class="about">
+            <div class="left-abt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vitae error aut veritatis est velit
+                    quis cupiditate itaque at a sit minima optio, sed veniam laboriosam ullam temporibus magnam ab modi
+                    voluptatibus. Itaque, aliquid id consequatur ad temporibus hic dolorem sint doloribus alias eaque
+                    autem libero tempora ex! Odio suscipit voluptatibus dolor impedit aperiam omnis nesciunt culpa totam
+                    quod doloribus dolore, itaque aut nostrum quos quasi? Mollitia earum aliquid incidunt maiores,
+                    rerum, eveniet est optio quos quod, animi corrupti doloremque!</p>
+            </div>
+            <div class="right-abt">
+                <img src="./images/undraw_friends_r511.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let items = document.querySelectorAll('.card');
+        items.forEach((e) => {
+            e.addEventListener('mouseover', () => {
+                let a = e.childNodes;
+                let ele = a[3];
+                ele.style.display = "flex";
+                ele.classList.add('anim');
+                e.addEventListener('mouseout', () => {
+                    ele.style.display = "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
