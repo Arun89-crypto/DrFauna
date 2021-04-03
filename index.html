@@ -15,7 +15,7 @@
     <div class="container">
         <nav class="navbar">
             <div class="left-nav">
-                <img src="./images/dog.png" alt="">
+                <img src="./images/dog.png" alt="" class="image-nav">
             </div>
             <div class="right-nav">
                 <ul class="nav-list">
@@ -99,21 +99,25 @@
                 <img src="./images/undraw_friends_r511.png" alt="">
             </div>
         </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your E-mail">
+                <input type="number" placeholder="Enter your phone number">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter the message"></textarea>
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footer">
+            <h2>Made By Name Error Team</h2>
+            <div class="foo">
+                <a href="#">Back to Top</a>
+                <div class="sliderf"></div>
+            </div>
+        </div>
     </div>
-    <script>
-        let items = document.querySelectorAll('.card');
-        items.forEach((e) => {
-            e.addEventListener('mouseover', () => {
-                let a = e.childNodes;
-                let ele = a[3];
-                ele.style.display = "flex";
-                ele.classList.add('anim');
-                e.addEventListener('mouseout', () => {
-                    ele.style.display = "none";
-                });
-            });
-        });
-    </script>
+    <script src="./javaScript/style.js"></script>
 </body>
 
 </html>
