@@ -1,15 +1,3 @@
-let items = document.querySelectorAll('.card');
-items.forEach((e) => {
-    e.addEventListener('mouseover', () => {
-        let a = e.childNodes;
-        let ele = a[3];
-        ele.style.display = "flex";
-        ele.classList.add('anim');
-        e.addEventListener('mouseout', () => {
-            ele.style.display = "none";
-        });
-    });
-});
 let navbar = document.querySelector('.navbar');
 let nav_image = document.querySelector('.navbar img');
 console.log(nav_image);

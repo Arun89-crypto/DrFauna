@@ -145,6 +145,7 @@
     border-bottom: 3px solid #ef233c;
     cursor: pointer;
     transition: all 0.7s ease;
+    font-size: 20px;
 }
 .updash select:focus{
     outline: none;
@@ -184,6 +185,9 @@
     height: 90%;
     margin: 2%;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .right-dash{
@@ -211,6 +215,10 @@
     background: #ef233c;
     position: absolute;
     top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     left: 0px;
     height: 100%;
     width: 100%;
@@ -326,6 +334,94 @@
     display: flex;
 }
 
+/* login page  */
+.logPage{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    margin: 20px;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    background: #edf2f4;
+    transform: translate(50%,50%);
+    z-index: 10;
+    color: #2b2d42;
+    border-radius: 20px;
+    border: 2px solid #d90429;
+    transition: all 0.5s ease;
+}
+.left-log,.right-log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+.left-log input,.right-log input{
+    margin: 10px;
+    background: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ef233c;
+    width: 60%;
+}
+.left-log h2,.right-log h2{
+    padding: 10px;
+    border-bottom: 2px solid #2b2d42;
+    margin: 10px;
+}
+.left-log input:focus,.right-log input:focus{
+    outline: none;
+}
+#closeBtn{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+#log-icon{
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.submit{
+    padding: 10px 20px;
+    font-size: 14px;
+    background: #ef233c;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2%;
+    font-weight: bold;
+    color: white;
+    width: 30%;
+}
+.submit:hover{
+    background: #d90429;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #edf2f4;
+    color: #2b2d42;
+    padding: 4%;
+    border-radius: 10px;
+}
+.phone img{
+    cursor: pointer;
+}
+
 /* responsive design */
 
 @media only screen and (max-width: 850px) {
@@ -355,6 +451,16 @@
     .right-dash{
         width: 90%;
         grid-template-columns: repeat(2,0fr);
+    }
+    .logPage{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        height: 100%;
+        transform: translate(0px,0px);
+    }
+    .left-log,.right-log{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 605px) {
@@ -387,7 +493,7 @@
 }
 @media only screen and (max-width: 475px) {
     .main-page{
-        height: 150vh;
+        height: 125vh;
     }
     .navbar{
         font-size: 10px;
@@ -401,4 +507,21 @@
     .contact button,.dashboard button{
         width: 50%;
     }
+}
+.copyfirm{
+    position:fixed;
+    top: 20%;
+    right: 3%;
+    padding: 10px;
+    background: #ef233c;
+    border-radius: 10px;
+    display: none;
+}
+.login{
+    background: #d90429;
+    width: 150px;
+    cursor: pointer;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
 }

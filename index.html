@@ -63,42 +63,26 @@
             <div class="updash">
                 <h2>Select your City</h2>
                 <select name="city" id="city">
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="">Select your City</option>
+                    <option value="Chandigarh">chandigarh</option>
+                    <option value="Dehradun">dehradun</option>
+                    <option value="Delhi">delhi</option>
+                    <option value="Jaipur">jaipur</option>
+                    <option value="Lucknow">lucknow</option>
+                    <option value="ahmedabad">ahmedabad</option>
+                    <option value="goa">goa</option>
+                    <option value="mumbai">mumbai</option>
+                    <option value="pune">pune</option>
+                    <option value="surat">surat</option>
                 </select>
                 <button id="selectBtn">Select</button>
             </div>
             <div class="lowdash">
                 <div class="left-dash">
-                    map
+                    <h2>MAP</h2>
                 </div>
                 <div class="right-dash">
-                    <div class="card">
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sapiente.</h4>
-                        <div class="hover">
-                            <p>6</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sapiente.</h4>
-                        <div class="hover">
-                            <p>6</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sapiente.</h4>
-                        <div class="hover">
-                            <p>6</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, sapiente.</h4>
-                        <div class="hover">
-                            <p>6</p>
-                        </div>
-                    </div>
+                    <h1 style="color: white;">No City selected</h1>
                 </div>
             </div>
         </div>
@@ -134,7 +118,36 @@
                 <div class="sliderf"></div>
             </div>
         </div>
+        <div class="logPage">
+            <img src="./images/close.png" alt="" width="40px" id="closeBtn">
+            <img src="./images/dog.png" alt="" id="log-icon">
+            <div class="left-log">
+                <h2>Log In</h2>
+                <input type="email" placeholder="Enter your E-mail">
+                <input type="password" name="password" id="" placeholder="Enter your password">
+                <button class="submit">Log In</button>
+            </div>
+            <div class="right-log">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your E-mail">
+                <input type="number" placeholder="Enter your phone number">
+                <input type="password" name="password" id="" placeholder="Password">
+                <button class="submit">Submit</button>
+            </div>
+        </div>
+        <div class="login">
+            <h2>LogIn/SignUp</h2>
+        </div>
     </div>
+    <div class="copyfirm">
+        <h5>Text Copied Successfully!!!</h5>
+    </div>
+
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBxg1K1ETYD8ZnktcOXjuri28ZRPnslyI&callback=initMap">
+        </script>
     <script type="text/javascript">
         (function (d, m) {
             var kommunicateSettings =
@@ -146,6 +159,7 @@
         })(document, window.kommunicate || {});
     </script>
     <script src="./javaScript/style.js"></script>
+    <script src="./javaScript/main.js"></script>
 </body>
 
 </html>
