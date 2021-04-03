@@ -17,7 +17,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 10px;
-    background: rgba(141, 153, 174, 0.8);
+    background: #8d99ae;
     margin: 2%;
     border-radius: 15px;
     position: sticky;
@@ -328,65 +328,77 @@
 
 /* responsive design */
 
-@media only screen and (max-width: 950px) { 
-    .navbar{
-        margin-bottom: 15%;
-    }
+@media only screen and (max-width: 850px) {
     .main-page{
         flex-direction: column;
-        justify-content: center;
-    }
-    .main-right,.main-left{
-        width: 95%;
-    }
-    .main-bar{
-        display: none;
-    }
-    .dashboard{
-        margin: 10%;
-        padding: 5%;
+        height: 100vh;
         width: 100%;
+    }
+    .main-left{
+        width: 100%;
+    }
+    .main-right{
+        width: 90%;
+    }
+    .updash select{
+        width: 80%;
     }
     .lowdash{
         width: 100%;
         flex-direction: column;
-        height: 80vh;
+        height: 90vh;
+        padding-bottom:10px ;
     }
-    .left-dash,.right-dash{
-        width: 100%;
+    .left-dash{
+        width: 90%;
     }
     .right-dash{
-        grid-template-columns: repeat(1fr,2);
+        width: 90%;
+        grid-template-columns: repeat(2,0fr);
     }
 }
-@media only screen and (max-width: 650px) {
-     .about{
-         flex-direction: column;
-     }
-     .main-page{
-         padding-top: 20%;
-         padding-bottom: 20%;
-     }
-     .left-abt,.right-abt{
-         width: 95%;
-     }
-     .contact{
-         width: 100%;
-     }
-     .contact input,.contact textarea{
-         width: 90%;
-     }
-     .dashboard{
-         padding-top: 20%;
-         padding-bottom: 20%;
-     }
-}
-@media only screen and (max-width: 750px) {
-    .dashboard{
+@media only screen and (max-width: 605px) {
+    .main-page{
         padding-top: 20%;
         padding-bottom: 20%;
     }
-    .left-abt p{
-        font-size: 0.8rem;
+    .about{
+        width: 100%;
+        flex-direction: column;
+    }
+    .left-abt,.right-abt{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact input,.contact textarea{
+        width: 80%;
+    }
+    .footer h2{
+        font-size: 1rem;
+    }
+    .navbar{
+        font-size: 12px;
+    }
+    .image-nav{
+        width: 50px !important;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .main-page{
+        height: 150vh;
+    }
+    .navbar{
+        font-size: 10px;
+    }
+    .image-nav{
+        width: 25px !important;
+    }
+    .right-dash{
+        grid-template-columns: repeat(1,0fr);
+    }
+    .contact button,.dashboard button{
+        width: 50%;
     }
 }
