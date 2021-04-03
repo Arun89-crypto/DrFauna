@@ -33,8 +33,12 @@ window.addEventListener('scroll', () => {
             e.style.background = "white";
         })
         navbar.style.background = "#2b2d42";
-        nav_image.style.display = "none";
-        navbar.style.justifyContent = "center"
+        if (screen.width >= 600) {
+            nav_image.style.display = "none";
+            navbar.style.justifyContent = "center"
+        } else {
+            nav_image.style.filter = "invert(1)";
+        }
     } else {
         navbar.style.background = "#8d99ae";
         navlistitem.forEach((e) => {
@@ -45,5 +49,6 @@ window.addEventListener('scroll', () => {
         })
         nav_image.style.display = "flex";
         navbar.style.justifyContent = "space-between"
+        nav_image.style.filter = "invert(0)";
     }
 })

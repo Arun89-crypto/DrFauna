@@ -57,6 +57,7 @@
 
 /* main page */
 .main-page{
+    justify-content: center;
     flex-direction: row;
     width: 100%;
     height: 70vh;
@@ -323,4 +324,69 @@
 }
 .image-nav{
     display: flex;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 950px) { 
+    .navbar{
+        margin-bottom: 15%;
+    }
+    .main-page{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-right,.main-left{
+        width: 95%;
+    }
+    .main-bar{
+        display: none;
+    }
+    .dashboard{
+        margin: 10%;
+        padding: 5%;
+        width: 100%;
+    }
+    .lowdash{
+        width: 100%;
+        flex-direction: column;
+        height: 80vh;
+    }
+    .left-dash,.right-dash{
+        width: 100%;
+    }
+    .right-dash{
+        grid-template-columns: repeat(1fr,2);
+    }
+}
+@media only screen and (max-width: 650px) {
+     .about{
+         flex-direction: column;
+     }
+     .main-page{
+         padding-top: 20%;
+         padding-bottom: 20%;
+     }
+     .left-abt,.right-abt{
+         width: 95%;
+     }
+     .contact{
+         width: 100%;
+     }
+     .contact input,.contact textarea{
+         width: 90%;
+     }
+     .dashboard{
+         padding-top: 20%;
+         padding-bottom: 20%;
+     }
+}
+@media only screen and (max-width: 750px) {
+    .dashboard{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .left-abt p{
+        font-size: 0.8rem;
+    }
 }
