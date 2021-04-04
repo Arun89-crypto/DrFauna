@@ -11,15 +11,15 @@ signBtn.addEventListener('click', () => {
     console.log(obj);
     collect(obj)
 })
-function collect (obj){
-    const options ={
-        method :'POST',
-        Headers:{
-            'Content-Type':'application/json'
+function collect(obj) {
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(obj)
     }
-    fetch('http://localhost:5500/drfauna/addngo',options);
+    fetch('http://localhost:5500/drfauna/addngo', options);
 }
 
 // getting the values of the contact us 
@@ -32,13 +32,13 @@ contSubmit.addEventListener('click', () => {
     let contMessage = document.getElementById('contMessage').value;
 
     contactObj = { name: contName, email: contEmail, number: contNumber, message: contMessage }
-    const options ={
-        method :'POST',
-        Headers:{
-            'Content-Type':'application/json'
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(contactObj)
     }
-    fetch('http://localhost:5500/drfauna/contactus',options);
+    fetch('http://localhost:5500/drfauna/contactus', options);
     console.log(contactObj);
 })
