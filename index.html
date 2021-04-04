@@ -103,13 +103,11 @@
         </div>
         <div class="contact" id="contact">
             <h1>Contact Us</h1>
-            <form method="POST" action="">
-                <input type="text" placeholder="Enter your name">
-                <input type="email" placeholder="Enter your E-mail">
-                <input type="number" placeholder="Enter your phone number">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter the message"></textarea>
-                <button class="submit">Submit</button>
-            </form>
+            <input type="text" placeholder="Enter your name" id="contName">
+            <input type="email" placeholder="Enter your E-mail" id="contEmail">
+            <input type="number" placeholder="Enter your phone number" id="contNumber">
+            <textarea name="message" id="contMessage" cols="30" rows="10" placeholder="Enter the message"></textarea>
+            <button class="submit" id="contSubmitBtn">Submit</button>
         </div>
         <div class="footer">
             <h2>Made By Name Error Team</h2>
@@ -124,14 +122,12 @@
             <div class="right-log">
                 <h2>Sign Up</h2>
                 <p>Sign up to get access to our chatbot feature</p>
-                <form action="" method="post">
-                    <input type="text" placeholder="Enter the name of your ngo">
-                    <input type="email" placeholder="Enter your E-mail">
-                    <input type="number" placeholder="Enter your phone number">
-                    <input type="text" placeholder="Enter your time of aviability">
-                    <input type="text" placeholder="Enter your address">
-                    <button class="submit" type="submit" id="signUpBtn">Submit</button>
-                </form>
+                <input type="text" placeholder="Enter the name of your ngo" id="signUpname">
+                <input type="email" placeholder="Enter your E-mail" id="signUpemail">
+                <input type="number" placeholder="Enter your phone number" id="signUpnumber">
+                <input type="text" placeholder="Enter your time of aviability" id="signUptime">
+                <input type="text" placeholder="Enter your address" id="signUpadd">
+                <button class="submit" id="signUpBtn">Submit</button>
             </div>
         </div>
         <div class="login">
@@ -160,6 +156,7 @@
     </script>
     <script src="./javaScript/style.js"></script>
     <script src="./javaScript/main.js"></script>
+    <script src="./javaScript/fetch.js"></script>
 </body>
 
 </html>

@@ -156,7 +156,7 @@ login.addEventListener('click', () => {
 })
 
 
-let signUpBtn = document.querySelector('.signUpBtn');
+let signUpBtn = document.querySelector('#signUpBtn');
 signUpBtn.addEventListener('click', formVal);
 
 function formVal() {
@@ -166,3 +166,6 @@ function formVal() {
         formval.style.display = "none";
     }, 3000);
 }
+
+let contSubmitBtn = document.getElementById('contSubmitBtn');
+contSubmitBtn.addEventListener('click', formVal)
