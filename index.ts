@@ -24,3 +24,4 @@ database()
   .catch((err) => {
     console.log(err);
   });
+// start with tsc and node build/index
