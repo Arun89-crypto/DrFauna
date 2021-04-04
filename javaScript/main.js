@@ -143,9 +143,15 @@ function showPop() {
 
 let closeBtn = document.querySelector('#closeBtn');
 let logPage = document.querySelector('.logPage');
+
+setTimeout(() => {
+    logPage.style.display = "flex";
+}, 5000);
+
 closeBtn.addEventListener('click', () => {
     logPage.style.display = "none";
 })
+
 let login = document.querySelector('.login');
 login.addEventListener('click', () => {
     logPage.style.display = "flex";

@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 .container, .navbar,.nav-list,.main-page,.coin,.main-left{
     display: flex;
@@ -17,7 +18,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 10px;
-    background: #8d99ae;
+    background: rgba(141,153,174,0.7);
     margin: 2%;
     border-radius: 15px;
     position: sticky;
@@ -337,7 +338,7 @@
 /* login page  */
 .logPage{
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -348,7 +349,7 @@
     position:fixed;
     top: 0px;
     left: 0px;
-    background: #edf2f4;
+    background: rgba(237,242,244,0.9);
     transform: translate(50%,50%);
     z-index: 10;
     color: #2b2d42;
@@ -371,6 +372,10 @@
     border: none;
     border-bottom: 2px solid #ef233c;
     width: 60%;
+    transition: all 0.5s ease;
+}
+.left-log input:focus,.right-log input:focus{
+    border-bottom: 2px solid #2b2d42;
 }
 .left-log h2,.right-log h2{
     padding: 10px;

@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
         slider.forEach((e) => {
             e.style.background = "white";
         })
-        navbar.style.background = "#2b2d42";
+        navbar.style.background = "rgba(43,45,66,0.7)";
         if (screen.width >= 600) {
             nav_image.style.display = "none";
             navbar.style.justifyContent = "center"
@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
             nav_image.style.filter = "invert(1)";
         }
     } else {
-        navbar.style.background = "#8d99ae";
+        navbar.style.background = "rgba(141,153,174,0.7)";
         navlistitem.forEach((e) => {
             e.style.color = "#2b2d42";
         })
