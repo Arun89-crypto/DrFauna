@@ -340,7 +340,7 @@
     position: relative;
     display: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     width: 50%;
     height: 50%;
@@ -357,32 +357,39 @@
     border: 2px solid #d90429;
     transition: all 0.5s ease;
 }
-.left-log,.right-log{
+.logPage form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.right-log{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    width: 50%;
+    width: 80%;
 }
-.left-log input,.right-log input{
+.right-log input{
     margin: 10px;
     background: none;
     padding: 5px;
     border: none;
     border-bottom: 2px solid #ef233c;
-    width: 60%;
+    width: 100%;
     transition: all 0.5s ease;
 }
 .left-log input:focus,.right-log input:focus{
     border-bottom: 2px solid #2b2d42;
 }
-.left-log h2,.right-log h2{
+.right-log h2{
     padding: 10px;
     border-bottom: 2px solid #2b2d42;
     margin: 10px;
 }
-.left-log input:focus,.right-log input:focus{
+.right-log input:focus{
     outline: none;
 }
 #closeBtn{
@@ -396,7 +403,7 @@
     top: 20%;
     left: 32%;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .submit{
     padding: 10px 20px;
@@ -524,9 +531,12 @@
 }
 .login{
     background: #d90429;
-    width: 150px;
+    width: auto;
     cursor: pointer;
     position:fixed;
-    bottom: 0px;
-    left: 0px;
+    bottom: 5px;
+    left: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
 }
