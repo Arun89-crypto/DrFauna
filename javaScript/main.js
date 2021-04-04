@@ -30,13 +30,11 @@ function get(input) {
         });
 }
 var obj;
-//getting the center position of the map
 function findCenter(arr) {
     var x = 0;
     var y = 0;
     for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
-        // console.log(element[0]['lat']);
         x += element[0]['lat']
         y += element[0]['lng']
     }
@@ -156,3 +154,15 @@ let login = document.querySelector('.login');
 login.addEventListener('click', () => {
     logPage.style.display = "flex";
 })
+
+
+let signUpBtn = document.querySelector('.signUpBtn');
+signUpBtn.addEventListener('click', formVal);
+
+function formVal() {
+    let formval = document.querySelector('.formVal')
+    formval.style.display = "block";
+    setTimeout(() => {
+        formval.style.display = "none";
+    }, 3000);
+}

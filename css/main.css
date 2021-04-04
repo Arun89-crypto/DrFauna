@@ -343,7 +343,7 @@
     justify-content: center;
     flex-direction: row;
     width: 50%;
-    height: 50%;
+    height: 60%;
     padding: 20px;
     margin: 20px;
     position:fixed;
@@ -528,6 +528,17 @@
     background: #ef233c;
     border-radius: 10px;
     display: none;
+}
+.formVal{
+    position:fixed;
+    top: 20%;
+    right: 3%;
+    padding: 10px;
+    background: #2b2d42;
+    border-radius: 10px;
+    display: none;
+    color: white;
+    border: 2px solid #d90429;
 }
 .login{
     background: #d90429;
